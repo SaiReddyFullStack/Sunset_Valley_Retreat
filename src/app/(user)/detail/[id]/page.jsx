@@ -26,7 +26,7 @@ const Page = () => {
   const dynamicHandler = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/admin/product/${id}`
+        `https://sunset-valley-retreat.vercel.app/api/admin/product/${id}`
       );
 
       const newData = await response.json();

@@ -13,7 +13,7 @@ const ProductCollection = () => {
     const [collection, setCollection] = useState([]);
 
     const collectionHandler = async () => {
-        const response = await fetch("/api/admin/add-product");
+        const response = await fetch("https://sunset-valley-retreat.vercel.app/api/admin/add-product");
         const newData = await response.json();
 
         console.log("product Data", newData);
